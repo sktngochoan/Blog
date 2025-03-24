@@ -1,5 +1,5 @@
-import Express from 'express';
-import Morgan from 'morgan';
+import express from 'express';
+import morgan from 'morgan';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import {engine} from 'express-handlebars';
@@ -11,10 +11,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 //
-app.use(Express.static(path.join(__dirname, 'resources/public')));
+app.use(express.static(path.join(__dirname, 'resources/public')));
 
 // morgan
-app.use(Morgan('combined'));
+app.use(morgan('combined'));
 
 // express handlebars
 app.engine('.hbs', engine({extname: '.hbs'}));

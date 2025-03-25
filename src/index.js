@@ -3,7 +3,7 @@ import morgan from 'morgan';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import {engine} from 'express-handlebars';
-const app = Express()
+const app = express()
 const port = 8080
 
 // get current path
